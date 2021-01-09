@@ -5,6 +5,10 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+// 配置axios
+import axios from "@/utils/request"
+Vue.prototype.$axios = axios;
+
 new Vue({
   router,
   store,
